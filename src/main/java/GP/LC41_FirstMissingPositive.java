@@ -1,6 +1,6 @@
 package GP;
 
-public class LC41 {
+public class LC41_FirstMissingPositive {
     public static void main(String[] args) {
         int[] inpt = {1,2,5,8,5,3};
         int firstMissingInteger = firstMissingPositive(inpt);

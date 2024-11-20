@@ -2,9 +2,9 @@ package GP;
 
 import java.util.*;
 
-public class LC49 {
+public class LC49_GroupAnagrams {
     public static void main(String[] args) {
-        LC49 sol = new LC49();
+        LC49_GroupAnagrams sol = new LC49_GroupAnagrams();
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
         List<List<String>> result = sol.groupAnagrams(strs);
         System.out.println(result);

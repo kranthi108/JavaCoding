@@ -50,3 +50,39 @@ public class FruitSmashAmazon {
         System.out.println("Minimum fruits left: " + minFruitsLeft(fruits2)); // Expected: 3
     }
 }
+//
+//import java.util.HashMap;
+//
+//public class FruitCrush {
+//    public static int minFruitsLeft(int[] fruits) {
+//        // Step 1: Count the frequency of each fruit type
+//        HashMap<Integer, Integer> fruitCount = new HashMap<>();
+//        int totalFruits = 0;
+//        int maxFrequency = 0;
+//
+//        for (int fruit : fruits) {
+//            int count = fruitCount.getOrDefault(fruit, 0) + 1;
+//            fruitCount.put(fruit, count);
+//
+//            // Update total fruits and max frequency
+//            totalFruits++;
+//            maxFrequency = Math.max(maxFrequency, count);
+//        }
+//
+//        // Step 2: Calculate leftovers
+//        int otherFruits = totalFruits - maxFrequency;
+//        if (maxFrequency > otherFruits) {
+//            return maxFrequency - otherFruits;
+//        } else {
+//            return totalFruits % 2;
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+//        // Example case: 8 apples and 20 bananas
+//        int[] fruits = {1, 1, 1, 1, 1, 1, 1, 1,
+//                2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+//                2, 2, 2, 2, 2, 2, 2, 2};
+//        System.out.println("Minimum fruits left: " + minFruitsLeft(fruits)); // Expected: 12
+//    }
+//}
