@@ -5,8 +5,11 @@ import java.util.List;
 import java.util.Stack;
 
 public class LC22_GenerateParenthesis {
-    public static List<String> main(String[] args) {
-        int n = 8;
+    public static void main(String[] args) {
+        int n = 3;
+        System.out.println(generateParenthesis(n));
+    }
+    public static List<String> generateParenthesis(int n) {
         Stack<Object[]> stack = new Stack<>();
         List<String> result = new ArrayList<>();
         stack.push(new Object[]{"",0,0});
