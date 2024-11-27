@@ -1,6 +1,5 @@
 package DesignPatterns.Proxy;
 import java.util.List;
-import java.util.List;
 
 public class EmployeeDaoProxy implements EmployeeDao {
     private EmployeeDaoImpl realDao;
