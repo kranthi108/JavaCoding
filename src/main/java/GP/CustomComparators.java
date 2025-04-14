@@ -4,7 +4,6 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 class Movie implements Comparable<Movie> {
     String name;
@@ -27,7 +26,7 @@ class Rating implements Comparator<Movie> {
     }
 }
 
-public class Mm {
+public class CustomComparators {
 
 
     public static void main(String[] args) {
