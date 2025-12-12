@@ -15,6 +15,9 @@ public class ThreadDemo {
     public static void main(String[] args) {
         MyThread thread1 = new MyThread();
         thread1.start();
+        thread1.setUncaughtExceptionHandler((t,e) -> {
+            System.out.println("Thread Exception " + t.getName());
+        });
         Thread thread = new Thread(new MyRunnable());
         thread.start();
         Thread thread2 = new Thread(() -> {
